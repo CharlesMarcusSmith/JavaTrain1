@@ -62,10 +62,10 @@ public class Calculator {
 		bioP = Math.round((bioR/150)*100);
 		totalP = Math.round((totalR/450)*100);
 		System.out.println(name + "'s result percentages are as follows:");
-		System.out.println("Physics:" + phyP);
-		System.out.println("Chemistry:" + chemP);
-		System.out.println("Biology:" + bioP);
-		System.out.println("Total:" + totalP);
+		System.out.println("Physics:" + phyP + "%.");
+		System.out.println("Chemistry:" + chemP + "%.");
+		System.out.println("Biology:" + bioP + "%.");
+		System.out.println("Total:" + totalP + "%.");
 		System.out.println();
 	}
 	public void Grade() {
