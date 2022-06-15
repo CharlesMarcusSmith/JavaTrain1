@@ -14,24 +14,24 @@ public class Calculator {
 	double totalP;
 	
 	
-	public void Summ(int numA, int numB){
+	public void summ(int numA, int numB){
 		this.numA = numA;
 		this.numB = numB;
 		System.out.println("Sum of " + numA + " and " + numB + " equals " + (numA+numB));
 	}
-	public void Mult(int numA, int numB){
+	public void mult(int numA, int numB){
 		this.numA = numA;
 		this.numB = numB;
 		System.out.println("Multiplication of " + numA + " and " + numB + " equals " + (numA*numB));
 	}
 	
-	public void Subt(int numA, int numB){
+	public void subt(int numA, int numB){
 		this.numA = numA;
 		this.numB = numB;
 		System.out.println("Subtraction of " + numA + " and " + numB + " equals " + (numA-numB));
 	}
 	
-	public void Divi(int numA, int numB){																													//combination of operations and conditionals exercise
+	public void divi(int numA, int numB){																													//combination of operations and conditionals exercise
 		this.numA = numA;
 		this.numB = numB;
 		if (numA<numB){
@@ -41,7 +41,7 @@ public class Calculator {
 		}
 	}	
 	
-	public void ResultsReceived(String name, double phyR, double chemR, double bioR) {
+	public void resultsReceived(String name, double phyR, double chemR, double bioR) {
 		this.name = name;
 		this.phyR = phyR;
 		this.chemR = chemR;
@@ -56,7 +56,7 @@ public class Calculator {
 		System.out.println("");
 	}
 	
-	public void ResultsPercentage() {
+	public void resultsPercentage() {
 		phyP =  Math.round((phyR/150)*100); 
 		chemP = Math.round((chemR/150)*100);
 		bioP = Math.round((bioR/150)*100);
@@ -68,7 +68,7 @@ public class Calculator {
 		System.out.println("Total:" + totalP + "%.");
 		System.out.println();
 	}
-	public void Grade() {
+	public void grade() {
 		System.out.println(name + "'s grades are as follows:");
 		if (phyP >= 60.0) {
 			System.out.println("Physics: PASS");
