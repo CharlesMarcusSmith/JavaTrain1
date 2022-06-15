@@ -57,10 +57,10 @@ public class Calculator {
 	}
 	
 	public void ResultsPercentage() {
-		double phyP =  Math.round((phyR/150)*100); 
-		double chemP = Math.round((chemR/150)*100);
-		double bioP = Math.round((bioR/150)*100);
-		double totalP = Math.round((totalR/450)*100);
+		phyP =  Math.round((phyR/150)*100); 
+		chemP = Math.round((chemR/150)*100);
+		bioP = Math.round((bioR/150)*100);
+		totalP = Math.round((totalR/450)*100);
 		System.out.println(name + "'s result percentages are as follows:");
 		System.out.println("Physics:" + phyP);
 		System.out.println("Chemistry:" + chemP);
@@ -72,7 +72,7 @@ public class Calculator {
 		System.out.println(name + "'s grades are as follows:");
 		if (phyP >= 60.0) {
 			System.out.println("Physics: PASS");
-		} else {
+		} else if (phyP >= 60.0) {
 			System.out.println("Physics: FAIL");
 		}
 		if (chemP >= 60.0) {
