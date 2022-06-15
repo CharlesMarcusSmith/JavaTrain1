@@ -1,49 +1,98 @@
 package com.qa.calculatorexercise;
 
 public class Calculator {
-	int numA;
+	int numA;																																				//double used as int rounds down decimals
 	int numB;
 	String name; 
 	double phyR; 
 	double chemR;
 	double bioR;
-	double total;
+	double totalR;
+	double phyP; 
+	double chemP;
+	double bioP;
+	double totalP;
 	
 	
-	public void Calculations(int numA, int numB){
+	public void Summ(int numA, int numB){
+		this.numA = numA;
+		this.numB = numB;
+		System.out.println("Sum of " + numA + " and " + numB + " equals " + (numA+numB));
+	}
+	public void Mult(int numA, int numB){
 		this.numA = numA;
 		this.numB = numB;
 		System.out.println("Multiplication of " + numA + " and " + numB + " equals " + (numA*numB));
-		System.out.println("Subtraction of " + numA + " and " + numB + " equals " + (numA-numB));
-		double numA1 = numA;
-		double numB1 = numB;
-		System.out.println("Multiplication of " + numA1 + " and " + numB1 + " equals " + (numA1/numB1));
-		System.out.println("");
 	}
 	
+	public void Subt(int numA, int numB){
+		this.numA = numA;
+		this.numB = numB;
+		System.out.println("Subtraction of " + numA + " and " + numB + " equals " + (numA-numB));
+	}
+	
+	public void Divi(int numA, int numB){																													//combination of operations and conditionals exercise
+		this.numA = numA;
+		this.numB = numB;
+		if (numA<numB){
+			System.out.println("Division of " + numA + " and " + numB + " equals " + (numA/numB));
+		} else {
+			System.out.println("Unfortunately the numbers you have entered cannot be divided, as " + numA + " is bigger than " + numB);			
+		}
+	}	
 	
 	public void ResultsReceived(String name, double phyR, double chemR, double bioR) {
 		this.name = name;
 		this.phyR = phyR;
 		this.chemR = chemR;
 		this.bioR = bioR;
-		this.total = phyR + chemR + bioR;
+		this.totalR = phyR + chemR + bioR;
 		
 		System.out.println(name + "'s results are as follows:");
 		System.out.println("Physics:" + phyR + "/150.");
 		System.out.println("Chemistry:" + chemR + "/150.");
 		System.out.println("Biology:" + bioR + "/150.");
-		System.out.println("Total:" + total);
+		System.out.println("Total:" + totalR);
 		System.out.println("");
 	}
 	
 	public void ResultsPercentage() {
+		double phyP =  Math.round((phyR/150)*100); 
+		double chemP = Math.round((chemR/150)*100);
+		double bioP = Math.round((bioR/150)*100);
+		double totalP = Math.round((totalR/450)*100);
 		System.out.println(name + "'s result percentages are as follows:");
-		System.out.println("Physics:" + Math.round((phyR/150)*100));
-		System.out.println("Chemistry:" + Math.round((chemR/150)*100));
-		System.out.println("Biology:" + Math.round((bioR/150)*100));
-		System.out.println("Total:" + Math.round((total/450)*100));
+		System.out.println("Physics:" + phyP);
+		System.out.println("Chemistry:" + chemP);
+		System.out.println("Biology:" + bioP);
+		System.out.println("Total:" + totalP);
 		System.out.println();
 	}
+	public void Grade() {
+		System.out.println(name + "'s grades are as follows:");
+		if (phyP >= 60.0) {
+			System.out.println("Physics: PASS");
+		} else {
+			System.out.println("Physics: FAIL");
+		}
+		if (chemP >= 60.0) {
+			System.out.println("Chemistry: PASS");
+		} else {
+			System.out.println("Chemistry: FAIL");
+		}
+		if (bioP >= 60.0) {
+			System.out.println("Biology: PASS");
+		} else {
+			System.out.println("Biology: FAIL");
+		}
+		if (phyP >= 60.0 && chemP >= 60.0 && bioP >= 60.0) {
+			System.out.println("Therefore, overall " + name + " has passed.");
+		} else {
+			System.out.println("Therefore, overall " + name + " has failed.");
+		}
+		System.out.println();
+	}
+	
+	
 	
 }
