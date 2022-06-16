@@ -21,7 +21,7 @@ public class Cond {
 		return res;
 	}
 	
-	public int flowTwo(int inNum3) {
+	public void flowTwo(int inNum3) {
 		this.num3 = inNum3;
 		
 		if(num3 > 2000) {
