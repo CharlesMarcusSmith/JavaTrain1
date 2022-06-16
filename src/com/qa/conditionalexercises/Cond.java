@@ -5,6 +5,7 @@ public class Cond {
 	int num2;
 	boolean bool1;
 	int res;
+	int num3;
 	
 	public int flowOne (int inNum1, int inNum2, boolean inBool) {
 		this.num1 = inNum1;
@@ -18,5 +19,45 @@ public class Cond {
 			res = num1*num2;
 		}
 		return res;
+	}
+	
+	public int flowTwo(int inNum3) {
+		this.num3 = inNum3;
+		
+		if(num3 > 2000) {
+			System.out.println("A");
+			if(num3>6000) {
+				System.out.println("C");
+			}else {
+				System.out.println("B");
+				if(num3>4000) {
+					System.out.println("D");
+				}else {
+					System.out.println("E");
+				}
+				
+			}
+			
+		} else {
+			System.out.println("1");
+			if(num3>100) {
+				System.out.println("3");
+				if(num3>600) {
+					System.out.println("5");
+				}else {
+					System.out.println("4");
+					if(num3>500) {
+						System.out.println("6");
+					}else {
+						System.out.println("7");
+					}
+				}				
+			}
+			else {
+				System.out.println("2");
+			}
+		}
+		
+		
 	}
 }

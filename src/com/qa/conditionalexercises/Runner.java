@@ -14,7 +14,8 @@ public class Runner {
 		Cond flowA = new Cond();				//new Cond obj 
 		int res = flowA.flowOne(6,6,false);		//setting value = method is how we catch the return
 		System.out.println(res);				//36
-		res = flowA.flowOne(6,6,true);			//setting value = method is how we catch the return
+		res = flowA.flowOne(6,6,true);			//setting a class specifc value = method is how we catch the return
 		System.out.println(res);				//12
+		
 	}
 }

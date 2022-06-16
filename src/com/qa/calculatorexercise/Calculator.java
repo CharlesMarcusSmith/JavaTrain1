@@ -72,7 +72,7 @@ public class Calculator {
 		System.out.println(name + "'s grades are as follows:");
 		if (phyP >= 60.0) {
 			System.out.println("Physics: PASS");
-		} else if (phyP >= 60.0) {
+		} else {
 			System.out.println("Physics: FAIL");
 		}
 		if (chemP >= 60.0) {

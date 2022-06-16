@@ -25,7 +25,7 @@ public class Runner {
 //
 //		Method 1 - displays the results that the person got for each exam and then the total mark. Try to make the output neat and bespoke for each exam.
 		Calculator s1 = new Calculator();
-		s1.resultsReceived("Someone", 75, 64, 25);
+		s1.resultsReceived("Someone", 59, 64, 25);
 //		Method 2 - which finds and displays the percentage that the person received for the exams overall.
 		s1.resultsPercentage();
 		
@@ -44,7 +44,7 @@ public class Runner {
 //		Expand the above so that the message that is displayed varies depending on the number of subjects that they have failed.
 		s1.grade();
 		Calculator s2 = new Calculator();
-		s2.resultsReceived("Charles", 100, 110, 125); 
+		s2.resultsReceived("Charles", 100, 50, 125); 
 		s2.resultsPercentage();
 		s2.grade();
 	}
