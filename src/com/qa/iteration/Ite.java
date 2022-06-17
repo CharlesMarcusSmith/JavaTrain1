@@ -4,7 +4,7 @@ public class Ite {
 		
 	public void iteOne() {
 		
-		for(int A = 100; A <= 200; A++) {
+		for(int A = 100; A >= 200; A++) {
 			System.out.println("A");
 		}
 	}
