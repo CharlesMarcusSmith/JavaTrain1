@@ -6,7 +6,7 @@ public class Runner {
 	
 	public static String twoDArray[][] = {{"1", "2", "3"},{"A", "B", "C", "D", "E", "F", "G", "H"}};					//Has a length of two, because two values in it.
 																														//the first value is which [][] you want to reference, the second value is which value inside the array, so [0][0] is "1", and [1][0] is "A".
-	
+																														//JAVA is type specific, so in both arrays and array lists they are only stored in one type, 
 	public static void main(String[] args) {
 //		Exercises
 //		1: Create an array that will hold 10 integer values, populate the array with values, then call and output each element.
@@ -42,6 +42,7 @@ public class Runner {
 		}
 		
 //		Practicing multi dimensional array lists:
+		
 		
 //		ArrayExerciseThree.start();
 	}
