@@ -11,7 +11,7 @@ public class ArrayExerciseThree {
 //	6 For example; 1 = one, 100 = one hundred.
 	
 	
-//	This exercise has been described as 'obscenely' hard for our level, but here is my plan:
+//	Plan:
 //	1: Append numbers to list.
 //	2: Split, by changing from int > string > char > int.
 //	^ this might mean we need a multi dimmensional array to store & group the individual chars associated with the number in question
